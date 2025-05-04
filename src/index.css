@@ -1,0 +1,103 @@
+/* base reset and layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: linear-gradient(to right, #7b4397, #dc2430);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #222;
+}
+
+.quiz-wrapper {
+  background-color: #ffffff;
+  padding: 2.5rem 3rem;
+  border-radius: 24px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+  max-width: 540px;
+  width: 100%;
+  text-align: center;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.4rem;
+  color: #333;
+}
+
+button {
+  width: 100%;
+  margin: 0.6rem 0;
+  padding: 0.85rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  background: #dc2430;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+button:hover {
+  background: #b71c28;
+}
+
+button.skip {
+  background-color: #e0e0e0;
+  color: #444;
+}
+
+button.skip:hover {
+  background-color: #c9c9c9;
+}
+
+.countdown {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #e63946;
+}
+
+.fetching-screen {
+  font-size: 1rem;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.summary-box {
+  font-size: 1.2rem;
+}
+
+.summary-box h2 {
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.summary-box button {
+  background-color: #6a0572;
+}
+
+.summary-box button:hover {
+  background-color: #4a0358;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
